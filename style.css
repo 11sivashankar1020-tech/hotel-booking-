@@ -1,0 +1,148 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #f0f2f5;
+  font-family: 'Arial', sans-serif;
+}
+
+#adminPanel .row{
+  margin: 0;
+}
+
+/* Form / Card styling */
+.container.text-center{
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  max-width: 400px;
+  margin: 50px auto;
+}
+
+/* Input spacing */
+.container.text-center input{
+  margin-bottom: 15px;
+}
+
+/* Headings */
+.container.text-center h2{
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.btn-primary{
+  background-color: #007bA;
+  border-color: #007bA;
+}
+
+.btn-secondary{
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+/* Room cards */
+.card{
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* Admin sidebar */
+#adminSidebar{
+  background-color: #343a40;
+  min-height: 100vh;
+  color: white;
+  padding: 20px;
+}
+
+#adminSidebar a{
+  color: white;
+  display: block;
+  margin-bottom: 15px;
+  text-decoration: none;
+}
+
+#adminSidebar a:hover{
+  text-decoration: underline;
+}
+
+#adminSidebar .nav-link{
+  background: #495057;
+  border-radius: 5px;
+  padding: 8px 12px;
+  color: white !important;
+}
+
+#adminSidebar .nav{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Mobile Responsive */
+@media (max-width:768px){
+
+  #adminSidebar{
+    min-height: auto;
+    padding: 10px;
+  }
+
+  #adminSidebar h4{
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  #adminSidebar .nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  #adminSidebar .nav-link{
+    background: #495057;
+    border-radius: 5px;
+    padding: 8px 12px;
+    margin-bottom: 0;
+  }
+
+  #adminContent{
+    padding: 15px;
+  }
+
+}
+
+/* User List */
+.user-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* Buttons */
+.user-actions{
+  display: flex;
+  gap: 8px;
+}
+
+/* Mobile */
+@media (max-width:768px){
+
+  .user-item{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .user-actions{
+    width: 100%;
+  }
+
+}
